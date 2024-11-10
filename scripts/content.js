@@ -10,7 +10,7 @@ var selector_tab_active = ["select__tab-active", "active"];
 // API ENDPOINTS
 var url_mangadex = "https://api.mangadex.org/manga?includes[]=cover_art&contentRating[]=safe&contentRating[]=suggestive&contentRating[]=erotica&contentRating[]=pornographic"
 var url_covers = "https://uploads.mangadex.org/covers/"
-var url_similar = "https://api.similarmanga.com/similar/"
+var url_similar = "https://nekomangaorg.github.io/similar-data/"
 
 
 // DATA FOR TAB DISPLAY
@@ -252,7 +252,7 @@ function trigger_url_change() {
     });
 
     // Now send a request to our similar API
-    fetch(url_similar+mangaid+".json").then(function (response) {
+    fetch(url_similar+"?"+mangaid).then(function (response) {
         return response.json();
     }).then(function (data) {
 
