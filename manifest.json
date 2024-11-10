@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "MangaDex Similar Manga",
-  "version": "0.3.1",
+  "version": "0.3.2",
 
   "description": "Similar manga recommendations for MangaDex.",
 
@@ -13,7 +13,7 @@
 
   "permissions": [
     "https://api.mangadex.org/",
-    "https://api.similarmanga.com/"
+    "https://nekomangaorg.github.io/"
   ],
 
   "content_scripts": [
