@@ -252,8 +252,8 @@ function trigger_url_change() {
     });
 
     // Now send a request to our similar API
-    fetch(url_similar+"?"+mangaid).then(function (response) {
-        return response.html();
+    fetch(url_similar+"?uuid="+mangaid).then(function (response) {
+        return response.json();
     }).then(function (data) {
 
         // Setup the data page (should load covers)
