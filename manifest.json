@@ -13,7 +13,7 @@
 
   "permissions": [
     "https://api.mangadex.org/",
-    "https://nekomangaorg.github.io/"
+    "https://nekomangaorg.github.io/similar-data/"
   ],
 
   "content_scripts": [
